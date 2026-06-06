@@ -76,7 +76,7 @@ function setRiskTheme(level) {
 }
 
 async function analyzeURL(url) {
-  const res = await fetch("http://localhost:8000/predict", {
+  const res = await fetch("https://phishing-api-owrc.onrender.com/predict", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
